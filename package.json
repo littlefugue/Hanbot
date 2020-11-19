@@ -1,13 +1,11 @@
 {
-  "name": "ping-pong-bot",
+  "name": "hanbot",
   "version": "1.0.0",
-  "description": "A discord bot that plays ping pong!",
-  "main": "index.js",
+  "description": "A discord bot for Hangang!",
+  "main": "bot.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node bot.js"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "discord.js": "^12.4.1"
   }
