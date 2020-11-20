@@ -6,6 +6,15 @@ client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
 
+client.on('guildMemberAdd', member => {
+  // Send the message to a designated channel on a server:
+  const channel = member.guild.channels.cache.find(ch => ch.name === '잡담');
+  // Do nothing if the channel wasn't found on this server
+  if (!channel) return;
+  // Send the message, mentioning the member
+  channel.send(`${member}, 한강디코에 오신 것을 환영합니다. 이름은 실명으로 바꿔 주시고 공지사항은 전부 읽어 주세요.`);
+});
+
 client.on('message', msg => {
   if (msg.content === 'ping') {
     msg.reply('pingpingi');
