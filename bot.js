@@ -39,7 +39,7 @@ client.on('message', msg => {
     if (!channel) return;
     // Send the message, mentioning the member
     channel.send(`${msg.member},한강디코에 오신 것을 환영합니다. 잡담방에 인사+실명 남겨주시고 공지사항은 전부 읽어 주세요. 관리자가 확인 후 등급이 부여됩니다.`);
-    msg.member.guild.channels.get('772669318085345280').send(`${msg.member}, 한강디코에 오신 것을 환영합니다. 잡담방에 인사+실명 남겨주시고 공지사항은 전부 읽어 주세요. 관리자가 확인 후 등급이 부여됩니다.`);
+    msg.member.guild.channels.get('772669318085345280').send(`${msg.member}hi.`);
   }
 });
 client.on('message', msg => {
