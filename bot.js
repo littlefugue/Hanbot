@@ -33,7 +33,7 @@ client.on('guildMemberAdd', member => {
 client.on('message', msg => {
   if (msg.content==='this'){
     // Send the message to a designated channel on a server:
-    const channel = member.guild.channels.cache.find(ch => ch.name === 'sss');
+    const channel = msg.member.guild.channels.cache.find(ch => ch.name === 'sss');
     // Do nothing if the channel wasn't found on this server
     if (!channel) return;
     // Send the message, mentioning the member
