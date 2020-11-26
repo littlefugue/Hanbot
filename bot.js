@@ -38,7 +38,7 @@ client.on('message', msg => {
 		case('방장!!!'):
 		case('방장!!!!'):
 		case('방장!!!!!'):
-			msg.channel.send(`${guild.owner}!!!`)
+			msg.channel.send(`${Hangang.owner}!!!`)
 			break;
 	}
 });
