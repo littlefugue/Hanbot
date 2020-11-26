@@ -29,7 +29,7 @@ client.on('message', msg => {
 			Sandbox.send('명령어 목록\n--일치--\n help!\n 도움!\n 경고!\n\n 한강\n ㅂ\n--포함--\n 방장');
 			break;
 		case('경고!'):
-			msg.channel.send('실매매 얘기/어그로는 실매매방에서만 해주세요');
+			msg.channel.send('실매매 얘기/어그로는 실매매방에서만 해주세요.');
 			break;
 		case('한강'):
 			msg.reply('가즈아!!!!!');
