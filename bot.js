@@ -24,7 +24,19 @@ client.on('message', msg => {
 			Sandbox.send('**명령어 목록**\n--일치 시 발동--\n> help!!!\n> 도움!!!\n> 갈!!!\n> 한강\n> ㅂ\n--포함 시 발동--\n> 경고!!!\n> 방장!!!');
 			break;
 		case('갈!!!'):
-			const attachment = new Discord.MessageAttachment('https://i.imgur.com/kDPRSj4.jpeg');
+			var attatchment;
+			const a=Math.random();
+			if(a < 0.01) {
+				attachment = new Discord.MessageAttachment('https://i.imgur.com/YdzSSBU.jpg');
+			} else if(a < 0.04) {
+				attachment = new Discord.MessageAttachment('https://i.imgur.com/E07oZUF.jpg');
+			} else if(a < 0.1) {
+				attachment = new Discord.MessageAttachment('https://i.imgur.com/ahxvoxW.jpg');
+			} else if(a < 0.4) {
+				attachment = new Discord.MessageAttachment('https://i.imgur.com/2uo6XAz.jpg');
+			} else {
+				attachment = new Discord.MessageAttachment('https://i.imgur.com/kDPRSj4.jpeg');
+			}
 			msg.channel.send(attachment);
 			break;
 		case('한강'):
