@@ -22,6 +22,7 @@ client.on('message', msg => {
 });
 
 client.on('message', msg => {
+	const Hangang = client.guilds.cache.get('762158660112613376');
 	switch (msg.content){
 		case('한강'):
 			msg.reply('가즈아!!!!!');
@@ -33,12 +34,19 @@ client.on('message', msg => {
 			msg.member.guild.channels.cache.get('772669318085345280').send(`${msg.member}hi.`);
 			break;
 		case('방장!'):
+			msg.channel.send(`${Hangang.owner}!`)
+			break;
 		case('방장!!'):
+			msg.channel.send(`${Hangang.owner}!!`)
+			break;
 		case('방장!!!'):
-		case('방장!!!!'):
-		case('방장!!!!!'):
-			const Hangang = client.guilds.cache.get('762158660112613376');
 			msg.channel.send(`${Hangang.owner}!!!`)
+			break;
+		case('방장!!!!'):
+			msg.channel.send(`${Hangang.owner}!!!!`)
+			break;
+		case('방장!!!!!'):
+			msg.channel.send(`${Hangang.owner}!!!!!`)
 			break;
 	}
 });
