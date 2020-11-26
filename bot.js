@@ -41,7 +41,7 @@ client.on('message', msg => {
 			break;
 	}
 	if (msg.content.includes('방장')) {
-		msg.channel.send(`${Hangang.owner}!!!`);
+		msg.channel.send(`${Hangang.owner}!!!\n방장`);
 	}
 });
 
