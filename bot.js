@@ -23,7 +23,12 @@ client.on('message', msg => {
 
 client.on('message', msg => {
 	const Hangang = client.guilds.cache.get('762158660112613376');
+	const Sandbox = client.channels.cache.get('772669318085345280')
 	switch (msg.content){
+		case(help!):
+		case(도움!):
+			message.reply('sandbox를 확인하세요');
+			Sandbox.send('명령어 목록\n--일치--\nhelp!\n도움!\n한강\nㅂ\n--포함--\n방장');
 		case('한강'):
 			msg.reply('가즈아!!!!!');
 			break;
@@ -31,7 +36,7 @@ client.on('message', msg => {
 			msg.channel.send('(╯°□°）╯︵ ┻━┻');
 			break;
 		case('new'):
-			msg.member.guild.channels.cache.get('772669318085345280').send(`${msg.member}hi.`);
+			Sandbox.send(`${msg.member}hi.`);
 			break;
 	}
 	if (msg.content.includes('방장')) {
