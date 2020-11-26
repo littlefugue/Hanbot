@@ -31,6 +31,7 @@ client.on('message', msg => {
 			break;
 		case('new'):
 			msg.member.guild.channels.cache.get('772669318085345280').send(`${msg.member}hi.`);
+			break;
 });
 
 
