@@ -12,11 +12,6 @@ client.on('guildMemberAdd', member => {
 	channel.send(`${member}, 환영합니다. 잡담방에 실명 남겨주시고 공지방에 있는 규정을 읽어 주세요.\n관리자가 확인 후 등급이 부여됩니다.\n봇에 대한 도움말은 help!!! 혹은 도움!!!을 치세요.`);
 });
 
-client.on('message', msg => {
-	if (msg.content==='new'){
-		msg.member.guild.channels.cache.get('772669318085345280').send(`${msg.member}hi.`);
-	}
-});
 
 client.on('message', msg => {
 	if (msg.author.bot) return;
@@ -34,9 +29,6 @@ client.on('message', msg => {
 		case('ㅂ'):
 			msg.channel.send('(╯°□°）╯︵ ┻━┻');
 			break;
-//		case('new'):
-//			Sandbox.send(`${msg.member}hi.`);
-//			break;
 	}
 	if (msg.content.includes('경고!!!')) {
 		msg.channel.send('실매매 얘기/어그로는 실매매방에서만 해주세요.');
@@ -46,6 +38,4 @@ client.on('message', msg => {
 	}
 });
 
-
-// Login with your bot token
 client.login(process.env.BOT_TOKEN);
