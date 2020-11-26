@@ -27,7 +27,7 @@ client.on('message', msg => {
 	switch (msg.content){
 		case(help!):
 		case(도움!):
-			message.reply('sandbox를 확인하세요');
+			msg.reply('sandbox를 확인하세요');
 			Sandbox.send('명령어 목록\n--일치--\nhelp!\n도움!\n한강\nㅂ\n--포함--\n방장');
 			break;
 		case('한강'):
