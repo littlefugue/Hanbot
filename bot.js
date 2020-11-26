@@ -26,6 +26,7 @@ client.on('message', msg => {
 		case('갈!!!'):
 			const attachment = new MessageAttachment('https://i.imgur.com/kDPRSj4.jpeg');
 			message.channel.send(attachment);
+			break;
 		case('한강'):
 			msg.reply('가즈아!!!');
 			break;
