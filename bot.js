@@ -33,21 +33,9 @@ client.on('message', msg => {
 		case('new'):
 			msg.member.guild.channels.cache.get('772669318085345280').send(`${msg.member}hi.`);
 			break;
-		case('방장!'):
-			msg.channel.send(`${Hangang.owner}!`)
-			break;
-		case('방장!!'):
-			msg.channel.send(`${Hangang.owner}!!`)
-			break;
-		case('방장!!!'):
-			msg.channel.send(`${Hangang.owner}!!!`)
-			break;
-		case('방장!!!!'):
-			msg.channel.send(`${Hangang.owner}!!!!`)
-			break;
-		case('방장!!!!!'):
-			msg.channel.send(`${Hangang.owner}!!!!!`)
-			break;
+	}
+	if (msg.content.includes('방장')) {
+		msg.channel.send(`${Hangang.owner}!!!`);
 	}
 });
 
