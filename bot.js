@@ -30,6 +30,7 @@ client.on('message', msg => {
 			break;
 		case('경고!'):
 			msg.channel.send('실매매 얘기/어그로는 실매매방에서만 해주세요');
+			break;
 		case('한강'):
 			msg.reply('가즈아!!!!!');
 			break;
