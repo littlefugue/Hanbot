@@ -1,5 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
+const Hangang = client.guilds.cache.get('762158660112613376');
 //const { Client, MessageAttachment } = require('discord.js');
 
 client.on('ready', () => {
@@ -31,6 +32,13 @@ client.on('message', msg => {
 			break;
 		case('new'):
 			msg.member.guild.channels.cache.get('772669318085345280').send(`${msg.member}hi.`);
+			break;
+		case('방장!'):
+		case('방장!!'):
+		case('방장!!!'):
+		case('방장!!!!'):
+		case('방장!!!!!'):
+			msg.channel.send(`${guild.owner}!!!`)
 			break;
 	}
 });
