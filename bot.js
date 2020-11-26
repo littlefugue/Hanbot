@@ -21,8 +21,11 @@ client.on('message', msg => {
 		case('help!!!'):
 		case('도움!!!'):
 			msg.reply('sandbox를 확인하세요');
-			Sandbox.send('**명령어 목록**\n--일치 시 발동--\n> help!!!\n> 도움!!!\n> 한강\n> ㅂ\n--포함 시 발동--\n> 경고!!!\n> 방장!!!');
+			Sandbox.send('**명령어 목록**\n--일치 시 발동--\n> help!!!\n> 도움!!!\n> 갈!!!\n> 한강\n> ㅂ\n--포함 시 발동--\n> 경고!!!\n> 방장!!!');
 			break;
+		case('갈!!!'):
+			const attachment = new MessageAttachment('https://i.imgur.com/kDPRSj4.jpeg');
+			message.channel.send(attachment);
 		case('한강'):
 			msg.reply('가즈아!!!');
 			break;
