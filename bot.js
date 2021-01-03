@@ -55,7 +55,22 @@ client.on('message', msg => {
 		}
 		msg.channel.send(attachment);
 	}
-	
+	if (msg.content.includes('비트!!!') || msg.content.includes('비트코인!!!') {
+		var attatchment;
+		const a=Math.random();
+		if(a < 0.01) {
+			attachment = new Discord.MessageAttachment('https://imgur.com/a/ZC6bmq9');
+		} else if(a < 0.04) {
+			attachment = new Discord.MessageAttachment('https://i.imgur.com/RRqEGc5.mp4');
+		} else if(a < 0.1) {
+			attachment = new Discord.MessageAttachment('https://i.imgur.com/RRqEGc5.mp4');
+		} else if(a < 0.4) {
+			attachment = new Discord.MessageAttachment('https://i.imgur.com/RRqEGc5.mp4');
+		} else {
+			attachment = new Discord.MessageAttachment('https://i.imgur.com/RRqEGc5.mp4');
+		}
+		msg.channel.send(attachment);
+	}
 });
 
 client.login(process.env.BOT_TOKEN);
