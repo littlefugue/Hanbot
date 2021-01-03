@@ -55,7 +55,7 @@ client.on('message', msg => {
 		}
 		msg.channel.send(attachment);
 	}
-	if (msg.content.includes('비트!!!') || msg.content.includes('비트코인!!!') {
+	if (msg.content.includes('비트!!!') || msg.content.includes('비트코인!!!')) {
 		var attatchment;
 		const a=Math.random();
 		if(a < 0.01) {
