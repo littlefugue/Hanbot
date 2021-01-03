@@ -21,7 +21,7 @@ client.on('message', msg => {
 		case('help!!!'):
 		case('도움!!!'):
 			msg.reply('sandbox를 확인하세요');
-			Sandbox.send('**명령어 목록**\n--일치 시 발동--\n> help!!!\n> 도움!!!\n> 임상!!!\n> 한강\n> ㅂ\n--포함 시 발동--\n> 경고!!!\n> 방장!!!\n> 갈!!!');
+			Sandbox.send('**명령어 목록**\n--일치 시 발동--\n> help!!!\n> 도움!!!\n> 임상!!!\n> 한강\n> ㅂ\n--포함 시 발동--\n> 경고!!!\n> 방장!!!\n> 갈!!!\n> 비트!!!\n> 비트코인!!!');
 			break;
 		case('임상!!!'):
 			msg.channel.send('짤막상식 1상 : 수십명한테 투여해서 약동/약력학 특성 보고 안전약물용량확인\n즉; 좆밥!\n2상 : 100명 , 용량 용법결정, pilot/pivotal study 다하면 3상 가는데 항생제 같은건 수백명수천면 대상으로도 해서 항생제는 2상 유의미\n3상 : 여까지오면 주식도 3상감 통과하면 시판\n4상: 이미 시판된 약 여기서 망하면 회사 할아버지따라감');
@@ -52,6 +52,22 @@ client.on('message', msg => {
 			attachment = new Discord.MessageAttachment('https://i.imgur.com/2uo6XAz.jpg');
 		} else {
 			attachment = new Discord.MessageAttachment('https://i.imgur.com/kDPRSj4.jpeg');
+		}
+		msg.channel.send(attachment);
+	}
+	if (msg.content.includes('비트!!!')||msg.content.includes('비트코인!!!') {
+		var attatchment;
+		const a=Math.random();
+		if(a < 0.01) {
+			attachment = new Discord.MessageAttachment('https://imgur.com/a/ZC6bmq9');
+		} else if(a < 0.04) {
+			attachment = new Discord.MessageAttachment('https://i.imgur.com/RRqEGc5.mp4');
+		} else if(a < 0.1) {
+			attachment = new Discord.MessageAttachment('https://i.imgur.com/RRqEGc5.mp4');
+		} else if(a < 0.4) {
+			attachment = new Discord.MessageAttachment('https://i.imgur.com/RRqEGc5.mp4');
+		} else {
+			attachment = new Discord.MessageAttachment('https://i.imgur.com/RRqEGc5.mp4');
 		}
 		msg.channel.send(attachment);
 	}
