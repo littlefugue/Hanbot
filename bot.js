@@ -58,13 +58,13 @@ client.on('message', msg => {
 	if (msg.content.includes('비트!!!') || msg.content.includes('비트코인!!!')) {
 		var attatchment;
 		const a=Math.random();
-		if(a < 0.03) {
+		if(a < 0.01) {
 			attachment = new Discord.MessageAttachment('https://i.imgur.com/0xawjGT.jpg');
-		} else if(a < 0.09) {
+		} else if(a < 0.04) {
 			attachment = new Discord.MessageAttachment('https://i.imgur.com/Qoe62TW.jpg');
-		} else if(a < 0.18) {
+		} else if(a < 0.1) {
 			attachment = new Discord.MessageAttachment('https://i.imgur.com/KAmiSqJ.jpg');
-		} else if(a < 0.42) {
+		} else if(a < 0.4) {
 			attachment = new Discord.MessageAttachment('https://i.imgur.com/3goQdK9.jpg');
 		} else {
 			attachment = new Discord.MessageAttachment('https://i.imgur.com/uZy1NJ4.jpg');
